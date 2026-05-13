@@ -1,0 +1,19 @@
+@use "variables";
+
+.podcastCard {
+  display: flex;
+  gap: 16px;
+  background-color: variables.color("Navy-600");
+  color: variables.color("Gray-100");
+  align-items: center;
+
+  .podcastInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .podcastCover {
+    border-radius: 8px;
+  }
+}
