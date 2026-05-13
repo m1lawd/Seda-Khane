@@ -14,6 +14,10 @@
   width: 720px;
   margin: 64px;
 
+  &:hover {
+    background-color: variables.color("Navy-400");
+  }
+
   .podcastInfo {
     display: flex;
     flex-direction: column;
