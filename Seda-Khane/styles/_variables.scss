@@ -1,0 +1,13 @@
+$colors: (
+  "Navy-900": #1a1c25,
+  "Navy-600": #252836,
+  "Navy-400": #2f3240,
+  "Gray-900": #333333,
+  "Gray-500": #7f8c8d,
+  "Gray-400": #b1b4b4,
+  "Gray-100": #e0e0e0,
+);
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
