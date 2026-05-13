@@ -4,11 +4,17 @@
   background-color: #252836;
   color: #e0e0e0;
   align-items: center;
+  font-family: "poppins";
 }
 .podcastCard .podcastInfo {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+}
+.podcastCard .podcastInfo h1 {
+  font-weight: 600;
+}
+.podcastCard .podcastInfo p {
+  color: #b1b4b4;
 }
 .podcastCard .podcastCover {
   border-radius: 8px;

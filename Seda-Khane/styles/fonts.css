@@ -32,3 +32,10 @@
   src: url("../assets/fonts/Poppins-500.ttf");
   font-weight: 500;
 }
+
+/* Semi-Bold */
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/Poppins-600.ttf");
+  font-weight: 600;
+}
