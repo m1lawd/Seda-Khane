@@ -18,7 +18,7 @@
   font-family: "poppins";
   padding: 16px;
   border-radius: 8px;
-  width: 520px;
+  width: 440px;
 
   transition:
     background-color 0.25s ease,
@@ -52,14 +52,14 @@
     color: variables.color("Gray-100");
     cursor: pointer;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
     margin: 0;
   }
 
   .podcastInfo p {
     color: variables.color("Gray-400");
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.5;
     margin: 0;
   }
@@ -82,8 +82,7 @@
   .playIcon {
     cursor: pointer;
     position: absolute;
-    bottom: 16px;
-    right: 16px;
+    left: 32px;
     color: variables.color("Gray-100");
     background-color: variables.color("Navy-900");
     display: grid;

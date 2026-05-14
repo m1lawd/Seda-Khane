@@ -16,7 +16,7 @@
   font-family: "poppins";
   padding: 16px;
   border-radius: 8px;
-  width: 520px;
+  width: 440px;
   transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .podcastCard:hover {
@@ -42,13 +42,13 @@
   color: #e0e0e0;
   cursor: pointer;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   margin: 0;
 }
 .podcastCard .podcastInfo p {
   color: #b1b4b4;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.5;
   margin: 0;
 }
@@ -68,8 +68,7 @@
 .podcastCard .playIcon {
   cursor: pointer;
   position: absolute;
-  bottom: 16px;
-  right: 16px;
+  left: 32px;
   color: #e0e0e0;
   background-color: #1a1c25;
   display: grid;
@@ -84,6 +83,44 @@
 .podcastCard .playIcon i {
   font-size: 14px;
   margin-left: 2px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #2f3240;
+  z-index: 1000;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.sidebar .userAvatar {
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 16px;
+}
+.sidebar .devider {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  opacity: 0.5;
+  background-color: #7f8c8d;
+  margin: 16px 0;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
 * {
