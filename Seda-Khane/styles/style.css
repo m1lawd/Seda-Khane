@@ -10,15 +10,13 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   background-color: #252836;
   color: #e0e0e0;
   font-family: "poppins";
-  padding: 12px;
-  border-radius: 16px;
-  overflow: visible;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 8px;
+  width: 520px;
   transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .podcastCard:hover {
@@ -56,7 +54,6 @@
 }
 .podcastCard .podcastCover {
   border-radius: 8px;
-  flex-shrink: 0;
 }
 .podcastCard .authorCover {
   position: absolute;
@@ -67,7 +64,6 @@
   border-radius: 16px;
   padding: 8px;
   z-index: 2;
-  flex-shrink: 0;
 }
 .podcastCard .playIcon {
   cursor: pointer;
