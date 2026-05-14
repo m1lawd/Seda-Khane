@@ -12,24 +12,35 @@ body {
   background-color: variables.color("Navy-900");
 }
 
-// // کانتینر اصلی برای چیدمان کنار هم
-// .main-container {
-//   display: flex;
-//   height: 100vh; // کل ارتفاع صفحه
-//   overflow: hidden; // جلوگیری از اسکرول اضافه
-// }
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
 
-// // استایل سایدبار (اگر در فایل جداگانه نیست، اینجا هم می‌تونی بنویسی)
-// .sidebar {
-//   // اگر در فایل جداگانه تعریف شده، این بخش تکراری نیست، فقط برای اطمینان
-//   // اما بهتره استایل‌ها رو در فایل _sideBar.scss نگه داری
-//   // اینجا فقط عرض و پوزیشن رو تنظیم می‌کنیم اگر نیاز بود
-//   flex-shrink: 0; // جلوگیری از کوچک شدن سایدبار
-// }
+  .titleBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
 
-// // محتوای اصلی
-// .content {
-//   flex-grow: 1; // فضای باقی‌مانده رو پر کنه
-//   padding: 20px;
-//   overflow-y: auto; // اسکرول فقط برای محتوای اصلی
-// }
+  .titleBtn button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .titleBtn button:hover {
+    background-color: #e0e0e0;
+  }
+
+  .episodeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
