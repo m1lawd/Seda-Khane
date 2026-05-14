@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "poppins", "markazi";
 }
 
 body {
@@ -15,27 +16,32 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  width: 96%;
+  width: 95%;
+  margin-top: 24px;
 
   .titleBtn {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    color: variables.color("Gray-100");
+    padding: 0 16px;
   }
 
   .titleBtn button {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 20px;
+    border: 2px solid variables.color("Blue-500");
+    background-color: transparent;
+    color: variables.color("Gray-100");
+    padding: 8px 32px;
+    border-radius: 16px;
     cursor: pointer;
-    font-family: inherit;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
   }
 
   .titleBtn button:hover {
-    background-color: #e0e0e0;
+    background-color: variables.color("Blue-500");
   }
 
   .episodeContainer {

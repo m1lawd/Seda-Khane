@@ -15,7 +15,6 @@
   gap: 16px;
   background-color: variables.color("Navy-600");
   color: variables.color("Gray-100");
-  font-family: "poppins";
   padding: 16px;
   border-radius: 8px;
   width: 440px;
@@ -40,7 +39,6 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    font-family: "poppins", "markazi";
     min-width: 0;
   }
 
@@ -84,7 +82,7 @@
     position: absolute;
     left: 32px;
     color: variables.color("Gray-100");
-    background-color: variables.color("Green-500");
+    background-color: variables.color("Blue-500");
     display: grid;
     place-items: center;
     width: 32px;
