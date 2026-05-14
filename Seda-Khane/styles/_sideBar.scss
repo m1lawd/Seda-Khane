@@ -18,6 +18,11 @@
     border-radius: 8px;
     display: block;
     margin: 0 auto 16px;
+    transition: transform 0.25s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
   }
 
   .devider {
@@ -43,6 +48,11 @@
       img.subs {
         border-radius: 8px;
         margin-bottom: 8px;
+        transition: transform 0.25s ease;
+
+        &:hover {
+          transform: translateY(-4px);
+        }
       }
     }
   }

@@ -68,13 +68,19 @@
 
   .authorCover {
     position: absolute;
-    top: -8px;
-    right: -10px;
+    cursor: pointer;
+    top: -6px;
+    right: -6px;
     object-fit: cover;
     background-color: variables.color("Navy-900");
     border-radius: 16px;
-    padding: 8px;
+    padding: 4px;
     z-index: 2;
+    transition: transform 0.25s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
   }
 
   .playIcon {

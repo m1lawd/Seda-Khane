@@ -55,13 +55,18 @@
 }
 .podcastCard .authorCover {
   position: absolute;
-  top: -8px;
-  right: -10px;
+  cursor: pointer;
+  top: -6px;
+  right: -6px;
   object-fit: cover;
   background-color: #1a1c25;
   border-radius: 16px;
-  padding: 8px;
+  padding: 4px;
   z-index: 2;
+  transition: transform 0.25s ease;
+}
+.podcastCard .authorCover:hover {
+  transform: translateY(-4px);
 }
 .podcastCard .playIcon {
   cursor: pointer;
@@ -101,6 +106,10 @@
   border-radius: 8px;
   display: block;
   margin: 0 auto 16px;
+  transition: transform 0.25s ease;
+}
+.sidebar .userAvatar:hover {
+  transform: translateY(-4px);
 }
 .sidebar .devider {
   display: block;
@@ -124,6 +133,10 @@
 .sidebar ul li img.subs {
   border-radius: 8px;
   margin-bottom: 8px;
+  transition: transform 0.25s ease;
+}
+.sidebar ul li img.subs:hover {
+  transform: translateY(-4px);
 }
 
 * {
@@ -168,6 +181,7 @@ body {
 .content .episodeContainer {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
   gap: 8px;
 }
 
