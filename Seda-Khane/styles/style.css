@@ -1,51 +1,93 @@
+.episodeContainer {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 16px;
+}
+
 .podcastCard {
   position: relative;
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 14px;
   background-color: #252836;
   color: #e0e0e0;
-  align-items: center;
   font-family: "poppins";
-  padding: 16px;
+  padding: 12px;
   border-radius: 16px;
   overflow: visible;
-  width: 720px;
-  margin: 64px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .podcastCard:hover {
   background-color: #2f3240;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+.podcastCard:hover .playIcon {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 .podcastCard .podcastInfo {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  font-family: "poppins", "markazi";
+  min-width: 0;
+}
+.podcastCard .podcastInfo a {
+  text-decoration: none;
 }
 .podcastCard .podcastInfo h1 {
+  color: #e0e0e0;
+  cursor: pointer;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
 }
 .podcastCard .podcastInfo p {
   color: #b1b4b4;
-  font-size: 16px;
-}
-.podcastCard .podcastInfo .en {
-  font-family: "poppins";
-}
-.podcastCard .podcastInfo .fa {
-  font-family: "markazi";
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
 }
 .podcastCard .podcastCover {
   border-radius: 8px;
+  flex-shrink: 0;
 }
 .podcastCard .authorCover {
   position: absolute;
-  top: -10px;
+  top: -8px;
   right: -10px;
   object-fit: cover;
   background-color: #1a1c25;
   border-radius: 16px;
   padding: 8px;
   z-index: 2;
+  flex-shrink: 0;
+}
+.podcastCard .playIcon {
+  cursor: pointer;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  color: #e0e0e0;
+  background-color: #1a1c25;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(8px) scale(0.85);
+  transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+}
+.podcastCard .playIcon i {
+  font-size: 14px;
+  margin-left: 2px;
 }
 
 * {

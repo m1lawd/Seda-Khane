@@ -1,59 +1,110 @@
 @use "variables";
 
+.episodeContainer {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 16px;
+}
+
 .podcastCard {
   position: relative;
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 14px;
   background-color: variables.color("Navy-600");
   color: variables.color("Gray-100");
-  align-items: center;
   font-family: "poppins";
-  padding: 16px;
+  padding: 12px;
   border-radius: 16px;
   overflow: visible;
-  width: 720px;
-  margin: 64px;
+  width: 100%;
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 
   &:hover {
     background-color: variables.color("Navy-400");
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+
+    .playIcon {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   }
 
   .podcastInfo {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    font-family: "poppins", "markazi";
+    min-width: 0;
+  }
+
+  .podcastInfo a {
+    text-decoration: none;
   }
 
   .podcastInfo h1 {
+    color: variables.color("Gray-100");
+    cursor: pointer;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
   }
 
   .podcastInfo p {
     color: variables.color("Gray-400");
-    font-size: 16px;
-  }
-
-  .podcastInfo .en {
-    font-family: "poppins";
-  }
-
-  .podcastInfo .fa {
-    font-family: "markazi";
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
   }
 
   .podcastCover {
     border-radius: 8px;
+    flex-shrink: 0;
   }
 
   .authorCover {
     position: absolute;
-    top: -10px;
+    top: -8px;
     right: -10px;
     object-fit: cover;
     background-color: variables.color("Navy-900");
     border-radius: 16px;
     padding: 8px;
     z-index: 2;
+    flex-shrink: 0;
+  }
+
+  .playIcon {
+    cursor: pointer;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    color: variables.color("Gray-100");
+    background-color: variables.color("Navy-900");
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(8px) scale(0.85);
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      background-color 0.25s ease;
+
+    i {
+      font-size: 14px;
+      margin-left: 2px;
+    }
   }
 }
