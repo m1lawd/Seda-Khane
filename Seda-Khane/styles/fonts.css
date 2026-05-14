@@ -1,41 +1,94 @@
+/*Poppins - En*/
+
+/* Extra-Light */
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/poppins/Poppins-100.ttf");
+  font-weight: 100;
+}
+
 /* Thin */
 @font-face {
   font-family: "poppins";
-  src: url("../assets/fonts/Poppins-100.ttf");
-  font-weight: 100;
+  src: url("../assets/fonts/poppins/Poppins-200.ttf");
+  font-weight: 200;
 }
 
 /* Light */
 @font-face {
   font-family: "poppins";
-  src: url("../assets/fonts/Poppins-200.ttf");
-  font-weight: 200;
+  src: url("../assets/fonts/poppins/Poppins-300.ttf");
+  font-weight: 300;
 }
 
 /* Regular */
 @font-face {
   font-family: "poppins";
-  src: url("../assets/fonts/Poppins-300.ttf");
-  font-weight: 300;
+  src: url("../assets/fonts/poppins/Poppins-400.ttf");
+  font-weight: 400;
 }
 
 /* Medium */
 @font-face {
   font-family: "poppins";
-  src: url("../assets/fonts/Poppins-400.ttf");
-  font-weight: 400;
-}
-
-/* Bold */
-@font-face {
-  font-family: "poppins";
-  src: url("../assets/fonts/Poppins-500.ttf");
+  src: url("../assets/fonts/poppins/Poppins-500.ttf");
   font-weight: 500;
 }
 
 /* Semi-Bold */
 @font-face {
   font-family: "poppins";
-  src: url("../assets/fonts/Poppins-600.ttf");
+  src: url("../assets/fonts/poppins/Poppins-600.ttf");
   font-weight: 600;
+}
+
+/* Bold */
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/poppins/Poppins-700.ttf");
+  font-weight: 700;
+}
+
+/* Black */
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/poppins/Poppins-800.ttf");
+  font-weight: 800;
+}
+
+/* Extra-Bold */
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/poppins/Poppins-900.ttf");
+  font-weight: 900;
+}
+
+/*Markazi - Fa*/
+
+/* Regular */
+@font-face {
+  font-family: "markazi";
+  src: url("../assets/fonts/markazi/Markazi-100.ttf");
+  font-weight: 100;
+}
+
+/* Medium */
+@font-face {
+  font-family: "markazi";
+  src: url("../assets/fonts/markazi/Markazi-200.ttf");
+  font-weight: 200;
+}
+
+/* Semi-Bold */
+@font-face {
+  font-family: "markazi";
+  src: url("../assets/fonts/markazi/Markazi-300.ttf");
+  font-weight: 300;
+}
+
+/* Bold */
+@font-face {
+  font-family: "markazi";
+  src: url("../assets/fonts/markazi/Markazi-400.ttf");
+  font-weight: 400;
 }

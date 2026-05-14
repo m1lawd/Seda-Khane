@@ -28,6 +28,12 @@
   color: #b1b4b4;
   font-size: 16px;
 }
+.podcastCard .podcastInfo .en {
+  font-family: "poppins";
+}
+.podcastCard .podcastInfo .fa {
+  font-family: "markazi";
+}
 .podcastCard .podcastCover {
   border-radius: 8px;
 }
