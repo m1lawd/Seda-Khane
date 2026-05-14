@@ -155,12 +155,13 @@ body {
   flex-direction: column;
   width: 95%;
   margin-top: 24px;
+  margin-left: 10px;
 }
 .content .titleBtn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   color: #e0e0e0;
   padding: 0 16px;
 }
@@ -168,7 +169,7 @@ body {
   border: 2px solid #6366f1;
   background-color: transparent;
   color: #e0e0e0;
-  padding: 8px 32px;
+  padding: 8px 40px;
   border-radius: 16px;
   cursor: pointer;
   align-items: center;
